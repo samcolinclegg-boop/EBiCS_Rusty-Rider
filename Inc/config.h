@@ -103,7 +103,7 @@
 
 //---------------------------------------------------------------------
 //Display settings
-#define DISPLAY_TYPE DISPLAY_TYPE_BAFANG
+#define DISPLAY_TYPE DISPLAY_TYPE_NO2
 
 //---------------------------------------------------------------------
 //Regen settings
