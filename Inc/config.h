@@ -47,11 +47,11 @@
 //Battery bar settings for Kunteng and Bafang Display
 
 //#define BATTERY_LEVEL_0 320000 //moved to display_kunteng.h
-#define BATTERY_LEVEL_1 323000
-#define BATTERY_LEVEL_2 329000
-#define BATTERY_LEVEL_3 344000
-#define BATTERY_LEVEL_4 368000
-#define BATTERY_LEVEL_5 380000
+#define BATTERY_LEVEL_1 410000
+#define BATTERY_LEVEL_2 440000
+#define BATTERY_LEVEL_3 470000
+#define BATTERY_LEVEL_4 500000
+#define BATTERY_LEVEL_5 546000
 
 //----------------------------------------------------------------------
 //PI-control factor settings
@@ -65,10 +65,10 @@
 //----------------------------------------------------------------------
 //PAS mode settings
 //#define DIRDET
-#define FRAC_HIGH 30
-#define FRAC_LOW 15
+#define FRAC_HIGH 25
+#define FRAC_LOW 10
 #define PAS_TIMEOUT 3000
-#define RAMP_END 1200
+#define RAMP_END 800
 #define PAS_IMP_PER_TURN 32
 
 //---------------------------------------------------------------------
@@ -80,8 +80,8 @@
 //--------------------------------------------------------------------
 //Speed settings
 #define WHEEL_CIRCUMFERENCE 2200
-#define GEAR_RATIO 11 //11 for BionX IGH3
-#define SPEEDLIMIT 25
+#define GEAR_RATIO 28 //11 for BionX IGH3
+#define SPEEDLIMIT 35
 #define PULSES_PER_REVOLUTION 1
 #define SPEEDSOURCE INTERNAL
 #define SPEEDFILTER 1
@@ -89,27 +89,27 @@
 
 //---------------------------------------------------------------------
 //power settings
-#define PH_CURRENT_MAX 1200
-#define BATTERYCURRENT_MAX 14000
+#define PH_CURRENT_MAX 1500
+#define BATTERYCURRENT_MAX 13000
 #define REVERSE 1 //1 for normal direction, -1 for reverse
 #define PUSHASSIST_CURRENT 300
-#define VOLTAGE_MIN 1320 //33V
+#define VOLTAGE_MIN 1560 //39V
 
 //---------------------------------------------------------------------
 //torquesensor settings
-#define TS_COEF 2400
+#define TS_COEF 2000
 #define TS_MODE
 #define TQONAD1
 
 //---------------------------------------------------------------------
 //Display settings
-#define DISPLAY_TYPE DISPLAY_TYPE_DEBUG
+#define DISPLAY_TYPE DISPLAY_TYPE_KUNTENG
 
 //---------------------------------------------------------------------
 //Regen settings
 
-#define REGEN_CURRENT 800
-#define REGEN_CURRENT_MAX 10000
+#define REGEN_CURRENT 0
+#define REGEN_CURRENT_MAX 0
 //#define ADC_BRAKE
 
 //---------------------------------------------------------------------
