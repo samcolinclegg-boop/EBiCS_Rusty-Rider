@@ -80,7 +80,7 @@
 //--------------------------------------------------------------------
 //Speed settings
 #define WHEEL_CIRCUMFERENCE 2200
-#define GEAR_RATIO 101
+#define GEAR_RATIO 201
 #define SPEEDLIMIT 35
 #define PULSES_PER_REVOLUTION 1
 #define SPEEDSOURCE INTERNAL
@@ -90,7 +90,7 @@
 //---------------------------------------------------------------------
 //power settings
 #define PH_CURRENT_MAX 1000
-#define BATTERYCURRENT_MAX 12000
+#define BATTERYCURRENT_MAX 13000
 #define REVERSE 1 //1 for normal direction, -1 for reverse
 #define PUSHASSIST_CURRENT 300
 #define VOLTAGE_MIN 1600 //48V
