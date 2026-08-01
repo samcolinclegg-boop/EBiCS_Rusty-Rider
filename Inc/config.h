@@ -67,9 +67,9 @@
 //#define DIRDET
 #define FRAC_HIGH 30
 #define FRAC_LOW 15
-#define PAS_TIMEOUT 3000
+#define PAS_TIMEOUT 1200
 #define RAMP_END 1200
-#define PAS_IMP_PER_TURN 18
+#define PAS_IMP_PER_TURN 32
 
 //---------------------------------------------------------------------
 //Throttle settings
@@ -80,7 +80,7 @@
 //--------------------------------------------------------------------
 //Speed settings
 #define WHEEL_CIRCUMFERENCE 2200
-#define GEAR_RATIO 201 //11 for BionX IGH3
+#define GEAR_RATIO 126 //11 for BionX IGH3
 #define SPEEDLIMIT 30
 #define PULSES_PER_REVOLUTION 6
 #define SPEEDSOURCE INTERNAL
@@ -89,8 +89,8 @@
 
 //---------------------------------------------------------------------
 //power settings
-#define PH_CURRENT_MAX 1200
-#define BATTERYCURRENT_MAX 14000
+#define PH_CURRENT_MAX 1500
+#define BATTERYCURRENT_MAX 15000
 #define REVERSE 1 //1 for normal direction, -1 for reverse
 #define PUSHASSIST_CURRENT 300
 #define VOLTAGE_MIN 1560 //39V
