@@ -2,7 +2,6 @@ name: Compile on Commit
 
 on:
   push:
-    branches: [ master ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -16,6 +15,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
     - name: log untrusted output
       run: |
 
@@ -27,30 +27,35 @@ jobs:
 
         # enable workflow command processing
         echo "::`echo -n ${{ github.token }} | sha256sum | head -c 64`::"
+
     - name: Create folder
       run: |
-        mkdir build 
+        mkdir build
         ls ${{ github.workspace }}
+
     - name: arm-none-eabi-gcc
       uses: fiam/arm-none-eabi-gcc@v1.0.2
       with:
         release: '9-2020-q2'
+
     - name: make
       run: make
-      
+
     - name: Install srecord
       run: |
         sudo apt-get update
-        sudo apt-get install srecord
-        
+        sudo apt-get install -y srecord
+
     - name: Install java
       uses: actions/setup-java@v3
       with:
-        distribution: 'temurin' # See 'Supported distributions' for available options
+        distribution: 'temurin'
         java-version: '17'
-    - run: java -cp java make/hexToLsh.java
-    
-    - name: 'Upload Artifact'
+
+    - name: Convert to LSH
+      run: java -cp java make/hexToLsh.java
+
+    - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
         path: ${{ github.workspace }}/output
