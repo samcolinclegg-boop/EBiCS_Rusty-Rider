@@ -40,8 +40,8 @@
 //#define SPEEDTHROTTLE
 #define SIXSTEPTHRESHOLD 20000
 #define SPEED_PLL 1 //1 for using PLL, 0 for angle extrapolation
-#define P_FACTOR_PLL 10
-#define I_FACTOR_PLL 10
+#define P_FACTOR_PLL 6
+#define I_FACTOR_PLL 6
 
 //----------------------------------------------------------------------
 //Battery bar settings for Kunteng and Bafang Display
@@ -103,7 +103,7 @@
 
 //---------------------------------------------------------------------
 //Display settings
-#define DISPLAY_TYPE DISPLAY_TYPE_DEBUG
+#define DISPLAY_TYPE DISPLAY_TYPE_NO2
 
 //---------------------------------------------------------------------
 //Regen settings
@@ -113,6 +113,6 @@
 //#define ADC_BRAKE
 
 //---------------------------------------------------------------------
-#define AUTODETECT 1
+#define AUTODETECT 0
 
 #endif /* CONFIG_H_ */
