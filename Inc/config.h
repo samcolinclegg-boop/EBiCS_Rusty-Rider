@@ -39,7 +39,7 @@
 //#define INDIVIDUAL_MODES
 //#define SPEEDTHROTTLE
 #define SIXSTEPTHRESHOLD 20000
-#define SPEED_PLL 0 //1 for using PLL, 0 for angle extrapolation
+#define SPEED_PLL 1 //1 for using PLL, 0 for angle extrapolation
 #define P_FACTOR_PLL 10
 #define I_FACTOR_PLL 10
 
@@ -75,7 +75,7 @@
 //Throttle settings
 #define THROTTLE_OFFSET 1250   //only default value, throttle offset is set at startup automatically
 #define THROTTLE_MAX 2850
-#define THROTTLE_OVERRIDE
+//#define THROTTLE_OVERRIDE
 
 //--------------------------------------------------------------------
 //Speed settings
@@ -103,7 +103,7 @@
 
 //---------------------------------------------------------------------
 //Display settings
-#define DISPLAY_TYPE DISPLAY_TYPE_NO2
+#define DISPLAY_TYPE DISPLAY_TYPE_DEBUG
 
 //---------------------------------------------------------------------
 //Regen settings
