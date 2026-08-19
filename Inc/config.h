@@ -39,7 +39,7 @@
 //#define INDIVIDUAL_MODES
 //#define SPEEDTHROTTLE
 #define SIXSTEPTHRESHOLD 20000
-#define SPEED_PLL 1 //1 for using PLL, 0 for angle extrapolation
+#define SPEED_PLL 0 //1 for using PLL, 0 for angle extrapolation
 #define P_FACTOR_PLL 6
 #define I_FACTOR_PLL 6
 
@@ -73,7 +73,7 @@
 
 //---------------------------------------------------------------------
 //Throttle settings
-#define THROTTLE_OFFSET 1250   //only default value, throttle offset is set at startup automatically
+#define THROTTLE_OFFSET 1600   //only default value, throttle offset is set at startup automatically
 #define THROTTLE_MAX 2850
 //#define THROTTLE_OVERRIDE
 
@@ -82,7 +82,7 @@
 #define WHEEL_CIRCUMFERENCE 2200
 #define GEAR_RATIO 101 //11 for BionX IGH3
 #define SPEEDLIMIT 25
-#define PULSES_PER_REVOLUTION 6
+#define PULSES_PER_REVOLUTION 1
 #define SPEEDSOURCE INTERNAL
 #define SPEEDFILTER 1
 #define SPDSHFT 0
