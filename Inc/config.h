@@ -69,12 +69,12 @@
 #define FRAC_LOW 15
 #define PAS_TIMEOUT 1200
 #define RAMP_END 1200
-#define PAS_IMP_PER_TURN 32
+#define PAS_IMP_PER_TURN 18
 
 //---------------------------------------------------------------------
 //Throttle settings
-#define THROTTLE_OFFSET 1600   //only default value, throttle offset is set at startup automatically
-#define THROTTLE_MAX 2850
+#define THROTTLE_OFFSET 1500   //only default value, throttle offset is set at startup automatically
+#define THROTTLE_MAX 3000
 //#define THROTTLE_OVERRIDE
 
 //--------------------------------------------------------------------
@@ -89,8 +89,8 @@
 
 //---------------------------------------------------------------------
 //power settings
-#define PH_CURRENT_MAX 1500
-#define BATTERYCURRENT_MAX 15000
+#define PH_CURRENT_MAX 1600
+#define BATTERYCURRENT_MAX 14000
 #define REVERSE 1 //1 for normal direction, -1 for reverse
 #define PUSHASSIST_CURRENT 300
 #define VOLTAGE_MIN 1560 //39V
