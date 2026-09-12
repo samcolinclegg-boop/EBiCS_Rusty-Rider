@@ -67,7 +67,7 @@
 //#define DIRDET
 #define FRAC_HIGH 30
 #define FRAC_LOW 15
-#define PAS_TIMEOUT 1200
+#define PAS_TIMEOUT 2000
 #define RAMP_END 1200
 #define PAS_IMP_PER_TURN 18
 
@@ -90,7 +90,7 @@
 //---------------------------------------------------------------------
 //power settings
 #define PH_CURRENT_MAX 1600
-#define BATTERYCURRENT_MAX 14000
+#define BATTERYCURRENT_MAX 12000
 #define REVERSE 1 //1 for normal direction, -1 for reverse
 #define PUSHASSIST_CURRENT 300
 #define VOLTAGE_MIN 1560 //39V
